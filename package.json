@@ -1,0 +1,41 @@
+{
+  "name": "playwright-template-framework",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "codegen": "npx playwright codegen",
+    "report": "npx playwright show-report",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier:write": "prettier --write '**/*.{ts,js,json,md}'",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "playwright": "^1.52.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.26.0"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "winston": "^3.17.0",
+    "zod": "^3.24.2"
+  }
+}
