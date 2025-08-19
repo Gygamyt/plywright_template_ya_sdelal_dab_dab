@@ -15,6 +15,19 @@ export const test = base.extend<Fixtures>({
     //region Pages
 
     /**
+     * Provides a basic page instance.
+     *
+     * **Usage:**
+     * Use this fixture for tests that require a simple page without authentication.
+     */
+    basicPage: async ({ browser }, use) => {
+        const page = await browser.newPage();
+        await page.goto(env.BASE_URL);
+        await use(page);
+        await page.close();
+    },
+
+    /**
      * Provides a logged-in user's page.
      *
      * **Usage:**

@@ -4,7 +4,7 @@ import { z } from "zod";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const envPath = path.resolve(__dirname, "../.env");
+const envPath = path.resolve(__dirname, "../../../.env");
 
 // Load .env file, overriding any existing process.env values
 // Really important if monorepo
